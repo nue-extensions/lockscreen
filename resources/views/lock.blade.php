@@ -10,24 +10,9 @@
             $('input').focus();
         });
     </script>
-    <script>
-        (function() {
-            window.onload = function () {
-                HSBsValidation.init('.js-validate', {
-                    onSubmit: data => {
-                        data.event.preventDefault()
-                        alert('Submited')
-                    }
-                })
-
-                new HSTogglePassword('.js-toggle-password')
-            }
-        })()
-    </script>
 @endsection
 
 @section('content')
-
     <main id="content" role="main" class="main">
         <div class="position-fixed top-0 end-0 start-0 bg-img-start" style="height: 32rem; background-image: url(https://cdn.btekno.id/templates/v2/svg/components/card-6.svg);">
             <div class="shape shape-bottom zi-1">
@@ -36,7 +21,6 @@
                 </svg>
             </div>
         </div>
-
         <div class="container py-5 py-sm-7">
             <a class="d-flex justify-content-center mb-3" href="/">
                 <div class="text-center zi-2">
@@ -46,11 +30,9 @@
                     </span>
                 </div>
             </a>
-
             <div class="mx-auto" style="max-width: 30rem;">
                 <form method="POST" action="{{ route('nue-unlock') }}">
                     @csrf
-                    
                     <div class="card card-lg mb-5">
                         <div class="card-body text-center">
 
@@ -79,13 +61,10 @@
                         </div>
                     </div>
                 </form>
-
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                     @csrf
                 </form>
-
             </div>
         </div>
     </main>
-
 @endsection
