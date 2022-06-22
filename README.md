@@ -1,4 +1,4 @@
-Lock-Screen
+Lock-Screen untuk Nue
 ======
 
 Tambahkan halaman lock-screen ke aplikasi Nue kamu.
