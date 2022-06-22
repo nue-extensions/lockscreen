@@ -23,13 +23,13 @@ Tambahin middleware `nue.lock` di dalam file konfigurasi `config/nue.php` kayak 
 
 ```php
 
-    'route' => [
+'route' => [
 
-        'prefix' => 'nue',
+    'prefix' => 'nue',
 
-        // Tambahin `nue.lock` lock disini
-        'middleware'    => ['web', 'nue', 'nue.lock'],
-    ],
+    // Tambahin `nue.lock` lock disini
+    'middleware'    => ['web', 'nue', 'nue.lock'],
+],
 
 ```
 
