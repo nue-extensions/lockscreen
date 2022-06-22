@@ -14,7 +14,7 @@ composer require nue-extensions/lockscreen
 Terus munculin menu Lock-Screen ini di sidebar Nue, eksekusi perintah berikut:
 
 ```bash
-php artisan nue:import lockscreen
+php artisan nue:import lock
 ```
 
 ## Konfigurasi
