@@ -1,8 +1,5 @@
-@extends('layouts.blank')
-@section('title', 'Lock-screen')
-
-@section('css')
-@endsection
+@extends('nue::blank')
+@section('title', __('Lock-Screen'))
 
 @section('js')
     <script>
@@ -48,14 +45,14 @@
                             <div class="input-group gx-2 gx-sm-3 mb-3">
                                 <input type="password" class="form-control form-control-single-number" {{ old('password') ? 'style=color:red;' : '' }} placeholder="Password" name="password" value="{{ old('password') }}"/>
                                 <button type="submit" class="btn btn-primary">
-                                    <span class="iconify h1 mb-0 text-light" data-icon="heroicons-solid:arrow-right"></span>
+                                    <i class="bi bi-door-open h1 mb-0 text-light"></i>
                                 </button>
                             </div>
 
                             <div class="text-center">
                                 <a href="{{ route('logout') }}" class="btn btn-soft-secondary" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    <span class="iconify" data-icon="fa-solid:power-off"></span>
                                     Logout
+                                    <i class="bi bi-box-arrow-right ms-1"></i>
                                 </a>
                             </div>
                         </div>
