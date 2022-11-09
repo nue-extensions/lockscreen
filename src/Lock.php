@@ -18,7 +18,7 @@ class Lock extends Extension
 
     public static function import()
     {
-        parent::createMenu('Lock-Screen', 'lock', 'icon-park-twotone:locking-computer');
+        parent::createMenu('Lock-Screen', 'lock', 'shield-lock');
 
         parent::createPermission('Lock-Screen', 'ext.lock', 'lock*');
     }
